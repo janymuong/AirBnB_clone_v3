@@ -16,7 +16,6 @@ This is a clone of the [AirBnB website](https://www.airbnb.com/). This specific 
 A RESTful API architecture is Resource-based, a resource is an object and can be access by a `URI`. An object is “displayed”/transferred via a representation (typically JSON).
 
 
----
 ### Basic Functionality
 
 `Specifications`:
@@ -29,7 +28,7 @@ A RESTful API architecture is Resource-based, a resource is an object and can be
         - manipulate your objects via a RESTful API
 ```
 
----
+
 ### File Hierarchy:
 
 > Repository Contents Info:  
@@ -67,6 +66,7 @@ A RESTful API architecture is Resource-based, a resource is an object and can be
 ```
 
 
+---
 ## Command Interprter
 > `command-line interface`<br/>
 > a shell implementation that uses the `Python` module `cmd`, which provides a simple framework for writing line-oriented command interpreters.
