@@ -1,16 +1,11 @@
 #!/usr/bin/python3
-'''module api/v1/views/index.py:
-create a route `/status` on the object app_views
-returns a jsonified response: 'status': 'OK'
-'''
-
+"""index module"""
 from api.v1.views import app_views
 from flask import jsonify
+from models import storage
 
 
-@app_views.route('/status')
-def api_status():
-    '''route:GET
-    that returns a JSON response
-    '''
+@app_views.route("/status")
+def status():
+    """returns ok status"""
     return jsonify({"status": "OK"})
