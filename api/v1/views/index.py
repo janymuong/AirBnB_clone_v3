@@ -13,4 +13,4 @@ def api_status():
     '''route:GET
     that returns a JSON response
     '''
-    return jsonify({'status': 'OK'})
+    return jsonify({"status": "OK"})
