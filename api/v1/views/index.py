@@ -12,7 +12,7 @@ from models import storage
 @app_views.route('/status', methods=['GET'])
 def api_status():
     '''route:GET
-    that returns a JSON response
+    returns a JSON response for RESTful API health
     '''
     return jsonify(
         {
@@ -24,7 +24,7 @@ def api_status():
 @app_views.route('/stats', methods=['GET'])
 def get_stats():
     '''get stats
-    etrieves the number of each objects by type
+    retrieves the number of each objects by type
     '''
     stats = {
         'amenities': storage.count('Amenity'),
