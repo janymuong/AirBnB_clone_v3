@@ -73,7 +73,7 @@ class FileStorage:
         '''get:
         retrieve an object from the file storage by class and id.
         '''
-        obj_key = f'{cls.__name__}.{id}'
+        obj_key = '{}.{}'.format(cls.__name__, id)
         return self.__objects.get(obj_key, None)
 
     def count(self, cls=None):
